@@ -67,7 +67,8 @@ function Detail() {
     dispatch({
       type: REMOVE_FROM_CART,
       _id: currentProduct._id
-    });idbPromise("cart", "delete", {...currentProduct});
+    });
+    idbPromise("cart", "delete", {...currentProduct});
   };
 
   return (
