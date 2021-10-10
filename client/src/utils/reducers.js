@@ -18,7 +18,7 @@ const initialState = {
   currentCategory: ""
 }
 
-export const rootReducer = (state = initialState, action) => {
+const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_PRODUCTS:
       return {
